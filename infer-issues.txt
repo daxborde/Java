@@ -1,0 +1,17 @@
+Most have no issues
+3 issues in Fibonacci.java: all NULL_DEREFERENCE, all false positive
+public static int fibBotUp(int n) {
+	Map<Integer, Integer> fib = new HashMap<>();
+
+	for (int i = 0; i <= n; i++) {
+		int f;
+		if (i <= 1) {
+			f = i;
+		} else {
+			f = fib.get(i - 1) + fib.get(i - 2);
+		}
+		fib.put(i, f);
+	}
+
+	return fib.get(n);
+}

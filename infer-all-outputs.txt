@@ -1,0 +1,175 @@
+dax@DESKTOP-MHKQGNF:/mnt/d/source/TheAlgorithmsJava/ciphers$ infer run -- javac *.java
+Capturing in javac mode...
+Found 7 source files to analyze in /mnt/d/source/TheAlgorithmsJava/ciphers/infer-out
+
+
+Analysis finished in 7.44ss
+
+  No issues found
+  
+  
+  
+dax@DESKTOP-MHKQGNF:/mnt/d/source/TheAlgorithmsJava/Conversions$ infer run -- javac *.java
+Capturing in javac mode...
+Found 17 source files to analyze in /mnt/d/source/TheAlgorithmsJava/Conversions/infer-out
+
+
+Analysis finished in 3.446ss
+
+  No issues found
+  
+  
+dax@DESKTOP-MHKQGNF:/mnt/d/source/TheAlgorithmsJava/DataStructures/Bags$ infer run -- javac *.java
+Capturing in javac mode...
+Found 1 source file to analyze in /mnt/d/source/TheAlgorithmsJava/DataStructures/Bags/infer-out
+
+
+Analysis finished in 1.635ss
+
+  No issues found
+  
+dax@DESKTOP-MHKQGNF:/mnt/d/source/TheAlgorithmsJava/DataStructures/Buffers$ infer run -- javac *.java
+Capturing in javac mode...
+Found 1 source file to analyze in /mnt/d/source/TheAlgorithmsJava/DataStructures/Buffers/infer-out
+
+
+Analysis finished in 1.839ss
+
+  No issues found
+  
+  
+  
+dax@DESKTOP-MHKQGNF:/mnt/d/source/TheAlgorithmsJava/DataStructures/Graphs$ infer run -- javac *.java
+Capturing in javac mode...
+Found 7 source files to analyze in /mnt/d/source/TheAlgorithmsJava/DataStructures/Graphs/infer-out
+
+
+Analysis finished in 3.92ss
+
+  No issues found
+  
+  
+dax@DESKTOP-MHKQGNF:/mnt/d/source/TheAlgorithmsJava/DataStructures/HashMap/Hashing$ infer run -- javac *.java
+Capturing in javac mode...
+Found 4 source files to analyze in /mnt/d/source/TheAlgorithmsJava/DataStructures/HashMap/Hashing/infer-out
+
+
+Analysis finished in 2.024ss
+
+  No issues found
+  
+
+dax@DESKTOP-MHKQGNF:/mnt/d/source/TheAlgorithmsJava/DataStructures/Heaps$ infer run -- javac *.java
+Capturing in javac mode...
+Found 6 source files to analyze in /mnt/d/source/TheAlgorithmsJava/DataStructures/Heaps/infer-out
+
+
+Analysis finished in 3.002ss
+
+  No issues found
+  
+  
+dax@DESKTOP-MHKQGNF:/mnt/d/source/TheAlgorithmsJava/DataStructures/Lists$ infer run -- javac *.java
+Capturing in javac mode...
+Found 6 source files to analyze in /mnt/d/source/TheAlgorithmsJava/DataStructures/Lists/infer-out
+
+
+Analysis finished in 4.77ss
+
+  No issues found
+  
+  
+  
+dax@DESKTOP-MHKQGNF:/mnt/d/source/TheAlgorithmsJava/DataStructures/Queues$ infer run -- javac *.java
+Capturing in javac mode...
+Found 4 source files to analyze in /mnt/d/source/TheAlgorithmsJava/DataStructures/Queues/infer-out
+
+
+Analysis finished in 2.239ss
+
+  No issues found
+  
+  
+dax@DESKTOP-MHKQGNF:/mnt/d/source/TheAlgorithmsJava/DataStructures/Stacks$ infer run -- javac *.java
+Capturing in javac mode...
+Found 6 source files to analyze in /mnt/d/source/TheAlgorithmsJava/DataStructures/Stacks/infer-out
+
+
+Analysis finished in 2.46ss
+
+  No issues found
+  
+  
+  
+dax@DESKTOP-MHKQGNF:/mnt/d/source/TheAlgorithmsJava/DataStructures/Trees$ infer run -- javac *.java
+Capturing in javac mode...
+Found 10 source files to analyze in /mnt/d/source/TheAlgorithmsJava/DataStructures/Trees/infer-out
+
+
+Analysis finished in 5.717ss
+
+  No issues found
+  
+  
+  
+dax@DESKTOP-MHKQGNF:/mnt/d/source/TheAlgorithmsJava/Conversions$ infer run -- javac *.java
+Capturing in javac mode...
+Found 17 source files to analyze in /mnt/d/source/TheAlgorithmsJava/Conversions/infer-out
+
+
+Analysis finished in 3.454ss
+
+  No issues found
+  
+  
+  
+dax@DESKTOP-MHKQGNF:/mnt/d/source/TheAlgorithmsJava/divideconquer$ infer run -- javac *.java
+Capturing in javac mode...
+
+Found 2 source files to analyze in /mnt/d/source/TheAlgorithmsJava/divideconquer/infer-out
+
+
+Analysis finished in 3.109ss
+
+  No issues found
+  
+  
+  
+  
+dax@DESKTOP-MHKQGNF:/mnt/d/source/TheAlgorithmsJava/DynamicProgramming$ infer run -- javac *.java
+Capturing in javac mode...
+Found 13 source files to analyze in /mnt/d/source/TheAlgorithmsJava/DynamicProgramming/infer-out
+
+
+Analysis finished in 4.368ss
+
+Found 3 issues
+
+Fibonacci.java:65: error: NULL_DEREFERENCE
+  object returned by `fib.get(valueOf((i-1)))` could be null and is dereferenced at line 65.
+  63.                   f = i;
+  64.               } else {
+  65. >                 f = fib.get(i - 1) + fib.get(i - 2);
+  66.               }
+  67.               fib.put(i, f);
+
+Fibonacci.java:65: error: NULL_DEREFERENCE
+  object returned by `fib.get(valueOf((i-2)))` could be null and is dereferenced at line 65.
+  63.                   f = i;
+  64.               } else {
+  65. >                 f = fib.get(i - 1) + fib.get(i - 2);
+  66.               }
+  67.               fib.put(i, f);
+
+Fibonacci.java:70: error: NULL_DEREFERENCE
+  object returned by `fib.get(valueOf(n))` could be null and is dereferenced at line 70.
+  68.           }
+  69.
+  70. >         return fib.get(n);
+  71.       }
+  72.
+
+
+
+
+
